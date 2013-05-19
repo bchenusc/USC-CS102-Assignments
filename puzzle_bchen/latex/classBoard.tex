@@ -1,0 +1,235 @@
+\hypertarget{classBoard}{\section{\-Board \-Class \-Reference}
+\label{classBoard}\index{\-Board@{\-Board}}
+}
+
+
+{\ttfamily \#include $<$board.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBoard_a9ee491d4fea680cf69b033374a9fdfcb}{\-Board} ()
+\item 
+\hyperlink{classBoard_a434d72861e7cee4ddbff4975d4522ff0}{\-Board} (int size, int num\-Init\-Moves, int seed)
+\item 
+\hyperlink{classBoard_ac77f209904bb37545295c17649a9dc17}{\-Board} (const \hyperlink{classBoard}{\-Board} \&b)
+\item 
+\hyperlink{classBoard_a97919e1594a034a83d6b18a6dd1c8b47}{\-Board} (int $\ast$tiles, int size)
+\item 
+\hyperlink{classBoard_af73f45730119a1fd8f6670f53f959e68}{$\sim$\-Board} ()
+\item 
+bool \hyperlink{classBoard_a4a7bb4b1d1e25cc5cfcce4a0f6a5c68b}{move} (int tile)
+\item 
+std\-::map$<$ int, \hyperlink{classBoard}{\-Board} $\ast$ $>$ \hyperlink{classBoard_a69149b8091bfaf02a394bedb9ff5f57f}{potential\-Moves} ()
+\item 
+bool \hyperlink{classBoard_aa2170b9bd685aae34f2c285add6da859}{solved} ()
+\item 
+bool \hyperlink{classBoard_acfdb9fa0c980de10be68aa082f31bda5}{operator==} (const \hyperlink{classBoard}{\-Board} \&rhs) const 
+\item 
+bool \hyperlink{classBoard_a162027718b714192d52f8d3aa71359c3}{operator$<$} (const \hyperlink{classBoard}{\-Board} \&rhs) const 
+\item 
+bool \hyperlink{classBoard_a2724182ffc7179d2eee30d55baa64923}{operator!=} (const \hyperlink{classBoard}{\-Board} \&rhs) const 
+\item 
+int $\ast$ \hyperlink{classBoard_aa884ede047e11f0dc2ec8d5b1aa9be46}{get\-Tiles} () const 
+\item 
+int \hyperlink{classBoard_a65a9e00ec8f504699ca6226f78516a1e}{get\-Size} () const 
+\end{DoxyCompactItemize}
+\subsection*{\-Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classBoard_aa45abc56ade7ca27e1a665852b5530a3}{operator$<$$<$} (std\-::ostream \&os, const \hyperlink{classBoard}{\-Board} \&b)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-A \hyperlink{classBoard}{\-Board} class that stores a list of tile values in a one dimensional array 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classBoard_a9ee491d4fea680cf69b033374a9fdfcb}{\index{\-Board@{\-Board}!\-Board@{\-Board}}
+\index{\-Board@{\-Board}!Board@{\-Board}}
+\subsubsection[{\-Board}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Board\-::\-Board} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBoard_a9ee491d4fea680cf69b033374a9fdfcb}
+\-Default \-Constructor. \-Constructs a 2x2 board solved \hyperlink{classBoard}{\-Board}. \hypertarget{classBoard_a434d72861e7cee4ddbff4975d4522ff0}{\index{\-Board@{\-Board}!\-Board@{\-Board}}
+\index{\-Board@{\-Board}!Board@{\-Board}}
+\subsubsection[{\-Board}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Board\-::\-Board} (
+\begin{DoxyParamCaption}
+\item[{int}]{size, }
+\item[{int}]{num\-Init\-Moves, }
+\item[{int}]{seed}
+\end{DoxyParamCaption}
+)}}\label{classBoard_a434d72861e7cee4ddbff4975d4522ff0}
+\-Init a board of given size and scramble it with num\-Init\-Moves by moving the space tile with a randomly chosen direction \-N, \-W, \-S, \-E some of which may be invalid, in which case we skip that move
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em size} & \-Number of tiles for the game. $\backslash$ \-Should be a perfect square (4, 16, 25) \\
+\hline
+{\em num\-Init\-Moves} & \-Number of tile moves to attempt to scramble the board \\
+\hline
+{\em seed} & \-Use to seed the random number generator (srand) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBoard_ac77f209904bb37545295c17649a9dc17}{\index{\-Board@{\-Board}!\-Board@{\-Board}}
+\index{\-Board@{\-Board}!Board@{\-Board}}
+\subsubsection[{\-Board}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Board\-::\-Board} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Board} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{classBoard_ac77f209904bb37545295c17649a9dc17}
+\-Deep \-Copy \-Constructor. \-Constructs a deep copy of the \hyperlink{classBoard}{\-Board}. \-Dynamically allocates tiles. 
+\begin{DoxyParams}{\-Parameters}
+{\em b} & \-A reference to the \hyperlink{classBoard}{\-Board} you want to copy using a deep copy. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBoard_a97919e1594a034a83d6b18a6dd1c8b47}{\index{\-Board@{\-Board}!\-Board@{\-Board}}
+\index{\-Board@{\-Board}!Board@{\-Board}}
+\subsubsection[{\-Board}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Board\-::\-Board} (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{tiles, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}}\label{classBoard_a97919e1594a034a83d6b18a6dd1c8b47}
+\-Another \-Deep \-Copy \-Constructor. \-Constructs a deep copy of the \hyperlink{classBoard}{\-Board}. \-Dynamically allocates tiles. 
+\begin{DoxyParams}{\-Parameters}
+{\em tiles} & \-A pointer to the tiles list that you want to copy. \\
+\hline
+{\em size} & \-The size of the tile list you are passing in the first parameter. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBoard_af73f45730119a1fd8f6670f53f959e68}{\index{\-Board@{\-Board}!$\sim$\-Board@{$\sim$\-Board}}
+\index{$\sim$\-Board@{$\sim$\-Board}!Board@{\-Board}}
+\subsubsection[{$\sim$\-Board}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Board\-::$\sim$\-Board} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBoard_af73f45730119a1fd8f6670f53f959e68}
+\-Destructor. \-Destroys the dynamically created tiles. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classBoard_a65a9e00ec8f504699ca6226f78516a1e}{\index{\-Board@{\-Board}!get\-Size@{get\-Size}}
+\index{get\-Size@{get\-Size}!Board@{\-Board}}
+\subsubsection[{get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Board\-::get\-Size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classBoard_a65a9e00ec8f504699ca6226f78516a1e}
+\-Getter function returning the size of the tile list. \begin{DoxyReturn}{\-Returns}
+\-Returns the size of the tile list. 
+\end{DoxyReturn}
+\hypertarget{classBoard_aa884ede047e11f0dc2ec8d5b1aa9be46}{\index{\-Board@{\-Board}!get\-Tiles@{get\-Tiles}}
+\index{get\-Tiles@{get\-Tiles}!Board@{\-Board}}
+\subsubsection[{get\-Tiles}]{\setlength{\rightskip}{0pt plus 5cm}int $\ast$ {\bf \-Board\-::get\-Tiles} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classBoard_aa884ede047e11f0dc2ec8d5b1aa9be46}
+\-Getter function returning the tile list. \begin{DoxyReturn}{\-Returns}
+\-Returns a pointer to the list of values in the board. 
+\end{DoxyReturn}
+\hypertarget{classBoard_a4a7bb4b1d1e25cc5cfcce4a0f6a5c68b}{\index{\-Board@{\-Board}!move@{move}}
+\index{move@{move}!Board@{\-Board}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Board\-::move} (
+\begin{DoxyParamCaption}
+\item[{int}]{tile}
+\end{DoxyParamCaption}
+)}}\label{classBoard_a4a7bb4b1d1e25cc5cfcce4a0f6a5c68b}
+\-Swaps tile with specified tile. \-Move will only move the tile in the given parameter if the tile is visually adjacent to the blank tile spot. 
+\begin{DoxyParams}{\-Parameters}
+{\em tile} & \-The value of the tile you want to move on the board. \-Not the index. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBoard_a2724182ffc7179d2eee30d55baa64923}{\index{\-Board@{\-Board}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Board@{\-Board}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool \-Board\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Board} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{classBoard_a2724182ffc7179d2eee30d55baa64923}
+\-Comparison to check if the \-Boards are not equal to each other by calling the == operator overload. 
+\begin{DoxyParams}{\-Parameters}
+{\em rhs} & \-The right hand side of the comparison. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns false if the \-Boards are not equal to each other. 
+\end{DoxyReturn}
+\hypertarget{classBoard_a162027718b714192d52f8d3aa71359c3}{\index{\-Board@{\-Board}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Board@{\-Board}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool \-Board\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Board} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{classBoard_a162027718b714192d52f8d3aa71359c3}
+\-Less than operator overload. \-Compares the first tile from each board that is not equal to the the tile of the other board in the same index. 
+\begin{DoxyParams}{\-Parameters}
+{\em rhs} & \hyperlink{classBoard}{\-Board} on the right hand side of the equation when comparing two boards. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns true if \hyperlink{classBoard}{\-Board} is less than the other \hyperlink{classBoard}{\-Board}. \-Returns false if not. 
+\end{DoxyReturn}
+\hypertarget{classBoard_acfdb9fa0c980de10be68aa082f31bda5}{\index{\-Board@{\-Board}!operator==@{operator==}}
+\index{operator==@{operator==}!Board@{\-Board}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool \-Board\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Board} \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{classBoard_acfdb9fa0c980de10be68aa082f31bda5}
+\-Checks if the the current \hyperlink{classBoard}{\-Board} is equal to the \hyperlink{classBoard}{\-Board} in the parameter by comparing each of their values in the corresponding indicies. 
+\begin{DoxyParams}{\-Parameters}
+{\em rhs} & the right hand side of the board being compared to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns a pointer to the list of values in the board. 
+\end{DoxyReturn}
+\hypertarget{classBoard_a69149b8091bfaf02a394bedb9ff5f57f}{\index{\-Board@{\-Board}!potential\-Moves@{potential\-Moves}}
+\index{potential\-Moves@{potential\-Moves}!Board@{\-Board}}
+\subsubsection[{potential\-Moves}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$ int, {\bf \-Board} $\ast$ $>$ {\bf \-Board\-::potential\-Moves} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBoard_a69149b8091bfaf02a394bedb9ff5f57f}
+\-Creates a map of potential moves. \-Function finds the blank tile and looks at its adjacent members. \-Key=tile, \-Value=\-Ptr to corresponding \hyperlink{classBoard}{\-Board} \begin{DoxyReturn}{\-Returns}
+\-Returns a copy of the map generated by potential moves which contains an integer key and a \hyperlink{classBoard}{\-Board} pointer. 
+\end{DoxyReturn}
+\hypertarget{classBoard_aa2170b9bd685aae34f2c285add6da859}{\index{\-Board@{\-Board}!solved@{solved}}
+\index{solved@{solved}!Board@{\-Board}}
+\subsubsection[{solved}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Board\-::solved} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBoard_aa2170b9bd685aae34f2c285add6da859}
+\-Checks if the \hyperlink{classBoard}{\-Board} is solved by comparing the values with the index. \-If the values of each tile are the same as the index they are in then return true; \begin{DoxyReturn}{\-Returns}
+\-Returns true if \hyperlink{classBoard}{\-Board} is solved. \-Returns false if \hyperlink{classBoard}{\-Board} is not. 
+\end{DoxyReturn}
+
+
+\subsection{\-Friends \-And \-Related \-Function \-Documentation}
+\hypertarget{classBoard_aa45abc56ade7ca27e1a665852b5530a3}{\index{\-Board@{\-Board}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Board@{\-Board}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os, }
+\item[{const {\bf \-Board} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}\label{classBoard_aa45abc56ade7ca27e1a665852b5530a3}
+\-Outputs the board by printing each row on separate lines and a space between each column. 
+\begin{DoxyParams}{\-Parameters}
+{\em os} & \-A reference to the ostream like \char`\"{}cout\char`\"{} \\
+\hline
+{\em b} & \-A reference to the board you want to print out. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns a reference ostream allowing output functions like cout to utilize the $<$$<$ function. 
+\end{DoxyReturn}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+board.\-h\item 
+board.\-cpp\end{DoxyCompactItemize}

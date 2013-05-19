@@ -1,0 +1,120 @@
+\hypertarget{classMainWindow}{\section{\-Main\-Window \-Class \-Reference}
+\label{classMainWindow}\index{\-Main\-Window@{\-Main\-Window}}
+}
+\subsection*{\-Public \-Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMainWindow_a5edcbc314e782645cdf4db101eeb247d}{start} ()
+\item 
+void \hyperlink{classMainWindow_afe94590990ca2638aa3d77e20cc0e9a1}{\-Main\-Windowmove\-Tile} (int i)
+\item 
+void \hyperlink{classMainWindow_ab391954f6bce6502ef0be57895be82d4}{toggle\-Heur} ()
+\item 
+void \hyperlink{classMainWindow_a96ecb108845c078ecbe1afa1868f20df}{cheat} ()
+\item 
+void \hyperlink{classMainWindow_a86b2510c1e57282f441efc07e8a883dd}{toggle\-Tile\-Moving} (bool toggle)
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMainWindow_a34c4b4207b46d11a4100c9b19f0e81bb}{\-Main\-Window} ()
+\item 
+\hyperlink{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\-Main\-Window} ()
+\item 
+void \hyperlink{classMainWindow_a86ac0b72af48169db0373c79d60b06b8}{win} ()
+\item 
+bool \hyperlink{classMainWindow_a52f550709c2f0993c3d3f344aa7369a4}{check\-If\-Int} (string s)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classMainWindow_a34c4b4207b46d11a4100c9b19f0e81bb}{\index{\-Main\-Window@{\-Main\-Window}!\-Main\-Window@{\-Main\-Window}}
+\index{\-Main\-Window@{\-Main\-Window}!MainWindow@{\-Main\-Window}}
+\subsubsection[{\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Main\-Window\-::\-Main\-Window} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{classMainWindow_a34c4b4207b46d11a4100c9b19f0e81bb}
+\-The \hyperlink{classMainWindow}{\-Main\-Window} constructor. \-Sets style to \-Q\-Plastique\-Style of the \-Window. \-Creates the outer layer that contains all the buttons, scene, view, subplayers, groupboxes, and buttons. \-Basically...everything you see. \-Alsos connects the gui items to the slots they need to correspond with. \hypertarget{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}{\index{\-Main\-Window@{\-Main\-Window}!$\sim$\-Main\-Window@{$\sim$\-Main\-Window}}
+\index{$\sim$\-Main\-Window@{$\sim$\-Main\-Window}!MainWindow@{\-Main\-Window}}
+\subsubsection[{$\sim$\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Main\-Window\-::$\sim$\-Main\-Window} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}
+\-Destructor does nothing b/c we do not need to implement memory deallocation. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classMainWindow_a96ecb108845c078ecbe1afa1868f20df}{\index{\-Main\-Window@{\-Main\-Window}!cheat@{cheat}}
+\index{cheat@{cheat}!MainWindow@{\-Main\-Window}}
+\subsubsection[{cheat}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::cheat} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_a96ecb108845c078ecbe1afa1868f20df}
+\-This function creates the cheat in the game. \-First it checks whether the game has already been won. \-If it has been won, then output an error saying the game has already been won. \-If start has never been clicked and no board is instantiated, output an error. \-If no heuristic is selected then output an error. \-Creates a \hyperlink{classPuzzleHeuristic}{\-Puzzle\-Heuristic} and \hyperlink{classPuzzleSolver}{\-Puzzle\-Solver} objects and creates a list of solutions using the run(\mbox{[}heuristic\mbox{]}) function. \-Stores the list of solutions and outputs them in the cheat window. \hypertarget{classMainWindow_a52f550709c2f0993c3d3f344aa7369a4}{\index{\-Main\-Window@{\-Main\-Window}!check\-If\-Int@{check\-If\-Int}}
+\index{check\-If\-Int@{check\-If\-Int}!MainWindow@{\-Main\-Window}}
+\subsubsection[{check\-If\-Int}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Main\-Window\-::check\-If\-Int} (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)}}\label{classMainWindow_a52f550709c2f0993c3d3f344aa7369a4}
+\-This function checks if the parameter s is a valid integer. 
+\begin{DoxyParams}{\-Parameters}
+{\em s} & \-The string you want to check if it is a valid integer or not. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Boolean value that returns true if the string s is a valid integer and false if it is not. 
+\end{DoxyReturn}
+\hypertarget{classMainWindow_afe94590990ca2638aa3d77e20cc0e9a1}{\index{\-Main\-Window@{\-Main\-Window}!\-Main\-Windowmove\-Tile@{\-Main\-Windowmove\-Tile}}
+\index{\-Main\-Windowmove\-Tile@{\-Main\-Windowmove\-Tile}!MainWindow@{\-Main\-Window}}
+\subsubsection[{\-Main\-Windowmove\-Tile}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::\-Main\-Windowmove\-Tile} (
+\begin{DoxyParamCaption}
+\item[{int}]{tile}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_afe94590990ca2638aa3d77e20cc0e9a1}
+\-Checks if the clicked tile is movable. \-If it is movable then move it in the board and move the \-G\-U\-I to the appropriate spot. \-Swaps blank tile and the clicked tile if possible. 
+\begin{DoxyParams}{\-Parameters}
+{\em tile} & \-The tile in question that wants to be moved! \-In this case it is the clicked tile. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classMainWindow_a5edcbc314e782645cdf4db101eeb247d}{\index{\-Main\-Window@{\-Main\-Window}!start@{start}}
+\index{start@{start}!MainWindow@{\-Main\-Window}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::start} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_a5edcbc314e782645cdf4db101eeb247d}
+\-Start function\-: \-First clears everything on the screen\-: view, error output, heuristic. \-Then checks if the input parameters in the text lines are valid appropriate integers. \-Then creates a board that is based on the input parameters. \-If the board is already solved. \-Change each tile so that they spell out \-You \-Win!!!!!!!!! \hypertarget{classMainWindow_ab391954f6bce6502ef0be57895be82d4}{\index{\-Main\-Window@{\-Main\-Window}!toggle\-Heur@{toggle\-Heur}}
+\index{toggle\-Heur@{toggle\-Heur}!MainWindow@{\-Main\-Window}}
+\subsubsection[{toggle\-Heur}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::toggle\-Heur} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_ab391954f6bce6502ef0be57895be82d4}
+\-This function checks which radio button is pressed. \-If manhattan is checked, this function sets an integer variable linked to the value of the manhattan code in the \-Heuristic struct. \-Else 'heur' is set to out of place. \-Use the 'heur' to determine which heuristic you are using after calling \hyperlink{classMainWindow_ab391954f6bce6502ef0be57895be82d4}{toggle\-Heur()}; \hypertarget{classMainWindow_a86b2510c1e57282f441efc07e8a883dd}{\index{\-Main\-Window@{\-Main\-Window}!toggle\-Tile\-Moving@{toggle\-Tile\-Moving}}
+\index{toggle\-Tile\-Moving@{toggle\-Tile\-Moving}!MainWindow@{\-Main\-Window}}
+\subsubsection[{toggle\-Tile\-Moving}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::toggle\-Tile\-Moving} (
+\begin{DoxyParamCaption}
+\item[{bool}]{toggle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_a86b2510c1e57282f441efc07e8a883dd}
+\-This function is used to change whether a tile is currently animating to its position or not. a\-Tile\-Is\-Moving variable needs to be set true when a tile is animating and false if no tile is animating. 
+\begin{DoxyParams}{\-Parameters}
+{\em toggle} & \-Set this variable to true or false to change a\-Tile\-Is\-Moving variable. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classMainWindow_a86ac0b72af48169db0373c79d60b06b8}{\index{\-Main\-Window@{\-Main\-Window}!win@{win}}
+\index{win@{win}!MainWindow@{\-Main\-Window}}
+\subsubsection[{win}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::win} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMainWindow_a86ac0b72af48169db0373c79d60b06b8}
+\-This function is called when the player wins the game. \-It will change all the tiles so that each tile displays a character from the string \char`\"{}\-You Win!\char`\"{} 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\-h\item 
+mainwindow.\-cpp\end{DoxyCompactItemize}

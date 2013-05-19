@@ -1,0 +1,210 @@
+\hypertarget{classGUITile}{\section{\-G\-U\-I\-Tile \-Class \-Reference}
+\label{classGUITile}\index{\-G\-U\-I\-Tile@{\-G\-U\-I\-Tile}}
+}
+\subsection*{\-Public \-Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGUITile_a27a1cce7b5fd28fd33eb48de037c4c95}{handle\-Timer} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classGUITile_a89ff7c31a4bb69a4bda4173b74e28c65}{void {\bfseries mouse\-Is\-Pressed} (int i)}\label{classGUITile_a89ff7c31a4bb69a4bda4173b74e28c65}
+
+\item 
+\hypertarget{classGUITile_a13412c999c62fd22a078a55912ba9b2f}{void {\bfseries toggle\-Tile\-In\-Grid\-Is\-Moving} (bool toggle)}\label{classGUITile_a13412c999c62fd22a078a55912ba9b2f}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGUITile_a2f68bab3f42c100659c5511caca1f6d0}{\-G\-U\-I\-Tile} (double nx, double ny, double w, double h, int val)
+\item 
+int \hyperlink{classGUITile_a6a9f8ca623dd71a0cdac32079597700d}{get\-Val} ()
+\item 
+void \hyperlink{classGUITile_a8cc874722eaec0956ffc0e69a72b04d9}{set\-X} (int x)
+\item 
+void \hyperlink{classGUITile_a07fb5eb83771d7ade19222e8e24c461b}{set\-Y} (int y)
+\item 
+void \hyperlink{classGUITile_a2c968a87617bd18ae9b8aa4d234aad88}{set\-Target\-X} (int x)
+\item 
+void \hyperlink{classGUITile_a95f89fcf6d7b4fb525b5b27b333c069b}{set\-Target\-Y} (int y)
+\item 
+int \hyperlink{classGUITile_aa9bb3eaa1bcfe6032805593db8fb0a86}{get\-X} ()
+\item 
+int \hyperlink{classGUITile_a22c037d69a48973ea0f71caa65a28f4a}{get\-Y} ()
+\item 
+void \hyperlink{classGUITile_aadaa7af395e9a3ac1cd8e0ec53508ba7}{set\-Text} (char s)
+\item 
+void \hyperlink{classGUITile_a5e2f783dd43773bbb0f2fde2d5f7129d}{move\-Tile} (int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classGUITile_a0e59b2fd285157680457e609491de079}{\-Q\-Timer $\ast$ {\bfseries timer}}\label{classGUITile_a0e59b2fd285157680457e609491de079}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGUITile_a3cbb3943cd6c0c4b42261546d19e20f5}{mouse\-Press\-Event} (\-Q\-Graphics\-Scene\-Mouse\-Event $\ast$event)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classGUITile_a2f68bab3f42c100659c5511caca1f6d0}{\index{\-G\-U\-I\-Tile@{\-G\-U\-I\-Tile}!\-G\-U\-I\-Tile@{\-G\-U\-I\-Tile}}
+\index{\-G\-U\-I\-Tile@{\-G\-U\-I\-Tile}!GUITile@{\-G\-U\-I\-Tile}}
+\subsubsection[{\-G\-U\-I\-Tile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-G\-U\-I\-Tile\-::\-G\-U\-I\-Tile} (
+\begin{DoxyParamCaption}
+\item[{double}]{nx, }
+\item[{double}]{ny, }
+\item[{double}]{w, }
+\item[{double}]{h, }
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)}}\label{classGUITile_a2f68bab3f42c100659c5511caca1f6d0}
+\-This function checks if the parameter s is a valid integer. 
+\begin{DoxyParams}{\-Parameters}
+{\em nx} & \-The \-X location of the gui tile. \\
+\hline
+{\em ny} & \-The \-Y location of the gui tile. \\
+\hline
+{\em w} & \-The width of the gui tile. \\
+\hline
+{\em h} & \-The height of the gui tile. \\
+\hline
+{\em val} & the value of the tile. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Boolean value that returns true if the string s is a valid integer and false if it is not. 
+\end{DoxyReturn}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classGUITile_a6a9f8ca623dd71a0cdac32079597700d}{\index{\-G\-U\-I\-Tile@{\-G\-U\-I\-Tile}!get\-Val@{get\-Val}}
+\index{get\-Val@{get\-Val}!GUITile@{\-G\-U\-I\-Tile}}
+\subsubsection[{get\-Val}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-G\-U\-I\-Tile\-::get\-Val} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGUITile_a6a9f8ca623dd71a0cdac32079597700d}
+\-Getter that gets the value of the tile. \begin{DoxyReturn}{\-Returns}
+\-Returns the value of the tile as an integer. 
+\end{DoxyReturn}
+\hypertarget{classGUITile_aa9bb3eaa1bcfe6032805593db8fb0a86}{\index{\-G\-U\-I\-Tile@{\-G\-U\-I\-Tile}!get\-X@{get\-X}}
+\index{get\-X@{get\-X}!GUITile@{\-G\-U\-I\-Tile}}
+\subsubsection[{get\-X}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-G\-U\-I\-Tile\-::get\-X} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGUITile_aa9bb3eaa1bcfe6032805593db8fb0a86}
+\-Gets the \-X coordinate of the tile. \begin{DoxyReturn}{\-Returns}
+\-Returns the x coord of the tile as an integer. 
+\end{DoxyReturn}
+\hypertarget{classGUITile_a22c037d69a48973ea0f71caa65a28f4a}{\index{\-G\-U\-I\-Tile@{\-G\-U\-I\-Tile}!get\-Y@{get\-Y}}
+\index{get\-Y@{get\-Y}!GUITile@{\-G\-U\-I\-Tile}}
+\subsubsection[{get\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-G\-U\-I\-Tile\-::get\-Y} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGUITile_a22c037d69a48973ea0f71caa65a28f4a}
+\-Gets the \-Y coordinate of the tile. \begin{DoxyReturn}{\-Returns}
+\-Returns the y coord of the tile as an integer. 
+\end{DoxyReturn}
+\hypertarget{classGUITile_a27a1cce7b5fd28fd33eb48de037c4c95}{\index{\-G\-U\-I\-Tile@{\-G\-U\-I\-Tile}!handle\-Timer@{handle\-Timer}}
+\index{handle\-Timer@{handle\-Timer}!GUITile@{\-G\-U\-I\-Tile}}
+\subsubsection[{handle\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-G\-U\-I\-Tile\-::handle\-Timer} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classGUITile_a27a1cce7b5fd28fd33eb48de037c4c95}
+\-Creates the animation of the tile using a timer. \-Moves the tile to the move\-Target\-X and move\-Target\-Y that the tile stores. \hypertarget{classGUITile_a3cbb3943cd6c0c4b42261546d19e20f5}{\index{\-G\-U\-I\-Tile@{\-G\-U\-I\-Tile}!mouse\-Press\-Event@{mouse\-Press\-Event}}
+\index{mouse\-Press\-Event@{mouse\-Press\-Event}!GUITile@{\-G\-U\-I\-Tile}}
+\subsubsection[{mouse\-Press\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-G\-U\-I\-Tile\-::mouse\-Press\-Event} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Graphics\-Scene\-Mouse\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{classGUITile_a3cbb3943cd6c0c4b42261546d19e20f5}
+\-An event that is triggered whenever the mouse clicks a tile. \-Emits a mouse\-Is\-Pressed(int) signal. \hypertarget{classGUITile_a5e2f783dd43773bbb0f2fde2d5f7129d}{\index{\-G\-U\-I\-Tile@{\-G\-U\-I\-Tile}!move\-Tile@{move\-Tile}}
+\index{move\-Tile@{move\-Tile}!GUITile@{\-G\-U\-I\-Tile}}
+\subsubsection[{move\-Tile}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-G\-U\-I\-Tile\-::move\-Tile} (
+\begin{DoxyParamCaption}
+\item[{int}]{nx, }
+\item[{int}]{ny}
+\end{DoxyParamCaption}
+)}}\label{classGUITile_a5e2f783dd43773bbb0f2fde2d5f7129d}
+\-Moves the tile to the specified location. 
+\begin{DoxyParams}{\-Parameters}
+{\em nx} & \-The x position of where the tile should move to. \\
+\hline
+{\em ny} & \-The y position of where the tile should move to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGUITile_a2c968a87617bd18ae9b8aa4d234aad88}{\index{\-G\-U\-I\-Tile@{\-G\-U\-I\-Tile}!set\-Target\-X@{set\-Target\-X}}
+\index{set\-Target\-X@{set\-Target\-X}!GUITile@{\-G\-U\-I\-Tile}}
+\subsubsection[{set\-Target\-X}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-G\-U\-I\-Tile\-::set\-Target\-X} (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{classGUITile_a2c968a87617bd18ae9b8aa4d234aad88}
+\-Sets the \-X coordinate of the target that the tile is moving to. 
+\begin{DoxyParams}{\-Parameters}
+{\em x} & changes the move\-Target\-X. \-The tile will move to this location. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGUITile_a95f89fcf6d7b4fb525b5b27b333c069b}{\index{\-G\-U\-I\-Tile@{\-G\-U\-I\-Tile}!set\-Target\-Y@{set\-Target\-Y}}
+\index{set\-Target\-Y@{set\-Target\-Y}!GUITile@{\-G\-U\-I\-Tile}}
+\subsubsection[{set\-Target\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-G\-U\-I\-Tile\-::set\-Target\-Y} (
+\begin{DoxyParamCaption}
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classGUITile_a95f89fcf6d7b4fb525b5b27b333c069b}
+\-Sets the \-Y coordinate of the target that the tile is moving to. 
+\begin{DoxyParams}{\-Parameters}
+{\em y} & changes the move\-Target\-Y. \-The tile will move to this location. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGUITile_aadaa7af395e9a3ac1cd8e0ec53508ba7}{\index{\-G\-U\-I\-Tile@{\-G\-U\-I\-Tile}!set\-Text@{set\-Text}}
+\index{set\-Text@{set\-Text}!GUITile@{\-G\-U\-I\-Tile}}
+\subsubsection[{set\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-G\-U\-I\-Tile\-::set\-Text} (
+\begin{DoxyParamCaption}
+\item[{char}]{s}
+\end{DoxyParamCaption}
+)}}\label{classGUITile_aadaa7af395e9a3ac1cd8e0ec53508ba7}
+\-Sets the graphic tile's \# to the character parameter s. 
+\begin{DoxyParams}{\-Parameters}
+{\em s} & sets the tile's character. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGUITile_a8cc874722eaec0956ffc0e69a72b04d9}{\index{\-G\-U\-I\-Tile@{\-G\-U\-I\-Tile}!set\-X@{set\-X}}
+\index{set\-X@{set\-X}!GUITile@{\-G\-U\-I\-Tile}}
+\subsubsection[{set\-X}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-G\-U\-I\-Tile\-::set\-X} (
+\begin{DoxyParamCaption}
+\item[{int}]{nx}
+\end{DoxyParamCaption}
+)}}\label{classGUITile_a8cc874722eaec0956ffc0e69a72b04d9}
+\-Sets the \-X coordinate of the tile to the parameter nx. 
+\begin{DoxyParams}{\-Parameters}
+{\em nx} & the new x coordinate that the tile should be set to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGUITile_a07fb5eb83771d7ade19222e8e24c461b}{\index{\-G\-U\-I\-Tile@{\-G\-U\-I\-Tile}!set\-Y@{set\-Y}}
+\index{set\-Y@{set\-Y}!GUITile@{\-G\-U\-I\-Tile}}
+\subsubsection[{set\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-G\-U\-I\-Tile\-::set\-Y} (
+\begin{DoxyParamCaption}
+\item[{int}]{ny}
+\end{DoxyParamCaption}
+)}}\label{classGUITile_a07fb5eb83771d7ade19222e8e24c461b}
+\-Sets the \-Y coordinate of the tile to the parameter ny. 
+\begin{DoxyParams}{\-Parameters}
+{\em nx} & the new y coordinate that the tile should be set to. \\
+\hline
+\end{DoxyParams}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+guitile.\-h\item 
+guitile.\-cpp\item 
+moc\-\_\-guitile.\-cpp\end{DoxyCompactItemize}

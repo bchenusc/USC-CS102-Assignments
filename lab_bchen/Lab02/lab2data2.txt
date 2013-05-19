@@ -1,0 +1,11 @@
+10
+pen 9 1.25
+bed 8 6.30
+book 7 0.50
+laptop 6 10.25
+phone 5 1.0
+plate 4 4.31
+ball 3 67.89
+shirt 2 2.30
+hat 1  5.1
+mirror 0 3.25

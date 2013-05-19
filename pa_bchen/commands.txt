@@ -1,0 +1,20 @@
+graph [
+node [
+id 1
+name Tommy Trojan
+age 124
+zip 90007
+]
+node [
+id 2
+name Max Nikias
+age 65
+zip 90210
+]
+node [
+id 3
+name Barack Obama
+age 51
+zip 20500
+]
+]

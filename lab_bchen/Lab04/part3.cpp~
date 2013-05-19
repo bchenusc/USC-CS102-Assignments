@@ -1,0 +1,45 @@
+#include "mylist.h"
+#include "iostream"
+#include "string"
+
+using namespace std;
+
+int main(){
+	MyList<int> intList;
+	MyList<string> stringList;
+	
+	(intList).push_back(1);
+	(intList).push_back(-1);
+	(intList).push_back(5);
+	(intList).push_back(266);
+	(intList).push_back(2);
+	(intList).push_back(-20);
+	
+	(stringList).push_back("Hello");
+	(stringList).push_back("a");
+	(stringList).push_back("ab1");
+	(stringList).push_back("124s");
+	(stringList).push_back("124");
+	(stringList).push_back("lalalaa");
+	
+	//intList now uses the overloaded [] operator.
+	cout<<"intList"<<endl;
+	for (int i=0; i<intList.size(); i++){
+		int x = intList[i];
+		cout<<x<<" ";
+	}
+	cout<<endl;
+	
+	cout<<endl;
+	//stringList still uses the at(int position) function.
+	cout<<"stringList"<<endl;
+	for (int i=0; i<stringList.size(); i++){
+		cout<<stringList.at(i)<<" ";
+	}
+	cout<<endl;
+	
+	//Test left hand [] operator
+	intList[1]=0;
+
+return 0;
+}

@@ -1,0 +1,89 @@
+\hypertarget{classPuzzleSolver}{\section{\-Puzzle\-Solver \-Class \-Reference}
+\label{classPuzzleSolver}\index{\-Puzzle\-Solver@{\-Puzzle\-Solver}}
+}
+\subsection*{\-Public \-Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPuzzleSolver_aa48b4706b55ceb5077a859794bc12ed7}{typedef std\-::set$<$ \hyperlink{classBoard}{\-Board} \*
+$\ast$, \hyperlink{structBoardLessThan}{\-Board\-Less\-Than} $>$ {\bfseries \-Board\-Set}}\label{classPuzzleSolver_aa48b4706b55ceb5077a859794bc12ed7}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPuzzleSolver_a70e86dbac90a3c6567598cb02fc523f2}{\-Puzzle\-Solver} (const \hyperlink{classBoard}{\-Board} \&b)
+\item 
+\hyperlink{classPuzzleSolver_adcc789feca768f7d468f6ca8806f75a3}{$\sim$\-Puzzle\-Solver} ()
+\item 
+int \hyperlink{classPuzzleSolver_a99e867d21204e8958f0bdfbcbbd01c5f}{run} (\hyperlink{classPuzzleHeuristic}{\-Puzzle\-Heuristic} $\ast$ph)
+\item 
+\hyperlink{classMyList}{\-My\-List}$<$ int $>$ \& \hyperlink{classPuzzleSolver_af33dd521433789d5dbd9476144f53928}{get\-Solution} ()
+\item 
+int \hyperlink{classPuzzleSolver_a2aa96aa4631d4a4b295fddf49e5dd9f7}{get\-Num\-Expansions} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classPuzzleSolver_a70e86dbac90a3c6567598cb02fc523f2}{\index{\-Puzzle\-Solver@{\-Puzzle\-Solver}!\-Puzzle\-Solver@{\-Puzzle\-Solver}}
+\index{\-Puzzle\-Solver@{\-Puzzle\-Solver}!PuzzleSolver@{\-Puzzle\-Solver}}
+\subsubsection[{\-Puzzle\-Solver}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Puzzle\-Solver\-::\-Puzzle\-Solver} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Board} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{classPuzzleSolver_a70e86dbac90a3c6567598cb02fc523f2}
+\-Constructor (makes a copy of the \hyperlink{classBoard}{\-Board} and stores it in \-\_\-b 
+\begin{DoxyParams}{\-Parameters}
+{\em b} & \-A reference to the \hyperlink{classBoard}{\-Board} that needs to be copied and stored in as b\-\_\-. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPuzzleSolver_adcc789feca768f7d468f6ca8806f75a3}{\index{\-Puzzle\-Solver@{\-Puzzle\-Solver}!$\sim$\-Puzzle\-Solver@{$\sim$\-Puzzle\-Solver}}
+\index{$\sim$\-Puzzle\-Solver@{$\sim$\-Puzzle\-Solver}!PuzzleSolver@{\-Puzzle\-Solver}}
+\subsubsection[{$\sim$\-Puzzle\-Solver}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Puzzle\-Solver\-::$\sim$\-Puzzle\-Solver} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPuzzleSolver_adcc789feca768f7d468f6ca8806f75a3}
+\-Destructor that deletes the dynamically allocated b\-\_\-. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classPuzzleSolver_a2aa96aa4631d4a4b295fddf49e5dd9f7}{\index{\-Puzzle\-Solver@{\-Puzzle\-Solver}!get\-Num\-Expansions@{get\-Num\-Expansions}}
+\index{get\-Num\-Expansions@{get\-Num\-Expansions}!PuzzleSolver@{\-Puzzle\-Solver}}
+\subsubsection[{get\-Num\-Expansions}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Puzzle\-Solver\-::get\-Num\-Expansions} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPuzzleSolver_a2aa96aa4631d4a4b295fddf49e5dd9f7}
+\-Return how many expansions were performed in the search \begin{DoxyReturn}{\-Returns}
+\-Returns how many expansions were performed in the search. 
+\end{DoxyReturn}
+\hypertarget{classPuzzleSolver_af33dd521433789d5dbd9476144f53928}{\index{\-Puzzle\-Solver@{\-Puzzle\-Solver}!get\-Solution@{get\-Solution}}
+\index{get\-Solution@{get\-Solution}!PuzzleSolver@{\-Puzzle\-Solver}}
+\subsubsection[{get\-Solution}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-My\-List}$<$int$>$\& {\bf \-Puzzle\-Solver\-::get\-Solution} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classPuzzleSolver_af33dd521433789d5dbd9476144f53928}
+\-Returns the solution list. \begin{DoxyReturn}{\-Returns}
+\-Returns a \-Mylist of int solutions. 
+\end{DoxyReturn}
+\hypertarget{classPuzzleSolver_a99e867d21204e8958f0bdfbcbbd01c5f}{\index{\-Puzzle\-Solver@{\-Puzzle\-Solver}!run@{run}}
+\index{run@{run}!PuzzleSolver@{\-Puzzle\-Solver}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Puzzle\-Solver\-::run} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Puzzle\-Heuristic} $\ast$}]{ph}
+\end{DoxyParamCaption}
+)}}\label{classPuzzleSolver_a99e867d21204e8958f0bdfbcbbd01c5f}
+\-Run the \-A$\ast$ search returning -\/1 if no solution exists or the number of moves in the solution. 
+\begin{DoxyParams}{\-Parameters}
+{\em ph} & \-A pointer to the \hyperlink{classPuzzleHeuristic}{\-Puzzle\-Heuristic} that is going to be implemented on the board. \-Currently either \-Manhattan or \-Out\-Of\-Place \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-Returns the \# of moves in the solutions or returns -\/1 if no solution. 
+\end{DoxyReturn}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+puzzle\-\_\-solver.\-h\item 
+puzzle\-\_\-solver.\-cpp\end{DoxyCompactItemize}
